@@ -1,8 +1,16 @@
-venv/
+# backups
+*_backup.csv
+*_backup_before_2026_merge.csv
+
+# zip files
+*.zip
+
+# large model
+models/winner_model.pkl
+
+# cache
 __pycache__/
 *.pyc
 
-
-data/cleaned_ipl_ball_by_ball_backup_before_2026_merge.csv
-data/cleaned_matches_enriched_backup.csv
-data/cleaned_matches_enriched_backup_before_2026_merge.csv
+# virtual env
+venv/
