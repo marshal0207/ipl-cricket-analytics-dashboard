@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-calendar-event-line"></i> IPL 2008 – 2024
+</div>
+<h1>Match Schedule &amp; Results</h1>
+<p class="intro">
+    Browse all IPL fixtures and results filtered by season. View toss decisions, venues, cities, and match outcomes.
+</p>
+
+<!-- ── Season filter ──────────────────────────────────────── -->
+<form method="GET" action="/schedule" class="search-form">
+    <div style="display:flex;align-items:center;gap:var(--space-2);flex:1;max-width:280px;">
+        <i class="ri-calendar-line" style="color:var(--text-muted);font-size:16px;flex-shrink:0;"></i>
+        <select name="season" style="flex:1;">
+            <option value="All Seasons" {% if selected_season == "All Seasons" %}selected{% endif %}>All Seasons</option>
+            {% for season in seasons_list %}
+            <option value="{{ season }}" {% if selected_season|string == season|string %}selected{% endif %}>{{ season }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-filter-3-line"></i> Apply Filter
+    </button>
+</form>
+
+<!-- ── Match count pill ───────────────────────────────────── -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin:var(--space-4) 0 var(--space-2);">
+    <div>
+        <div class="section-label">Results</div>
+        <h2 style="margin-top:0;">
+            {% if selected_season and selected_season != "All Seasons" %}
+                Season {{ selected_season }} Matches
+            {% else %}
+                All Matches
+            {% endif %}
+        </h2>
+    </div>
+    <span class="badge badge-teal">
+        <i class="ri-list-check"></i> &nbsp;{{ matches|length }} matches
+    </span>
+</div>
+
+<!-- ── Schedule table ─────────────────────────────────────── -->
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Date</th>
+                <th>Match</th>
+                <th>Venue</th>
+                <th>City</th>
+                <th>Toss Winner</th>
+                <th>Toss Decision</th>
+                <th>Winner</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in matches %}
+            <tr>
+                <td>
+                    <span class="badge badge-teal" style="font-size:10px;">{{ row.season }}</span>
+                </td>
+                <td style="color:var(--text-muted);font-size:12px;white-space:nowrap;">{{ row.date }}</td>
+                <td style="font-weight:600;color:var(--text-primary);white-space:nowrap;">
+                    {{ row.batting_team }} <span style="color:var(--text-muted);font-weight:400;">vs</span> {{ row.bowling_team }}
+                </td>
+                <td style="font-size:12px;color:var(--text-secondary);">{{ row.venue }}</td>
+                <td style="font-size:12px;color:var(--text-muted);">
+                    <i class="ri-map-pin-line" style="font-size:11px;"></i> {{ row.city }}
+                </td>
+                <td style="font-size:12px;color:var(--text-secondary);">{{ row.toss_winner }}</td>
+                <td>
+                    {% if row.toss_decision == "bat" or row.toss_decision == "Bat" %}
+                        <span class="badge badge-amber" style="font-size:10px;">🏏 Bat</span>
+                    {% else %}
+                        <span class="badge badge-teal" style="font-size:10px;">🏃 Field</span>
+                    {% endif %}
+                </td>
+                <td style="font-weight:600;color:var(--win);">{{ row.match_won_by }}</td>
+                <td style="font-size:12px;color:var(--text-secondary);">{{ row.win_outcome }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% if not matches %}
+<div class="info" style="margin-top:var(--space-4);">
+    <i class="ri-information-line"></i> &nbsp;No matches found for the selected season.
+</div>
+{% endif %}
+
+{% endblock %}

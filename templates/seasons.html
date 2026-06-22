@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-line-chart-line"></i> Year-on-Year Trends
+</div>
+<h1>Season Analytics</h1>
+<p class="intro">
+    Compare IPL scoring patterns, match volumes, and average runs per match across seasons.
+    Use the range filter to focus on specific years.
+</p>
+
+<!-- ── Season range filter ────────────────────────────────── -->
+<form method="GET" action="/seasons" class="search-form">
+    <div style="display:flex;align-items:center;gap:var(--space-2);">
+        <i class="ri-calendar-line" style="color:var(--text-muted);font-size:16px;flex-shrink:0;"></i>
+        <label style="font-size:12px;color:var(--text-muted);font-weight:600;white-space:nowrap;">From</label>
+        <select name="start_season">
+            {% for season in seasons_list %}
+            <option value="{{ season }}" {% if start_season|string == season|string %}selected{% endif %}>{{ season }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:var(--space-2);">
+        <label style="font-size:12px;color:var(--text-muted);font-weight:600;white-space:nowrap;">To</label>
+        <select name="end_season">
+            {% for season in seasons_list %}
+            <option value="{{ season }}" {% if end_season|string == season|string %}selected{% endif %}>{{ season }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-filter-3-line"></i> Apply Filter
+    </button>
+</form>
+
+{% if seasons %}
+
+<!-- ── KPI cards ─────────────────────────────────────────── -->
+<div class="cards" style="margin-top:var(--space-5);">
+    <div class="card">
+        <h3>Total Seasons</h3>
+        <p style="color:var(--accent);">{{ seasons|length }}</p>
+        <div class="card-meta">{{ start_season }} – {{ end_season }}</div>
+    </div>
+    <div class="card">
+        <h3>Total Matches</h3>
+        <p>{{ seasons | sum(attribute="matches") }}</p>
+        <div class="card-meta">Across all seasons</div>
+    </div>
+    <div class="card">
+        <h3>Total Runs</h3>
+        <p style="color:var(--win);">{{ seasons | sum(attribute="total_runs") }}</p>
+        <div class="card-meta">Runs scored</div>
+    </div>
+    <div class="card">
+        <h3>Avg Runs / Match</h3>
+        <p style="color:var(--accent);">
+            {{ "%.1f"|format((seasons | sum(attribute="total_runs")) / (seasons | sum(attribute="matches"))) }}
+        </p>
+        <div class="card-meta">Scoring rate</div>
+    </div>
+</div>
+
+<div class="info">
+    <i class="ri-information-line"></i>
+    &nbsp;Showing season analytics from <strong>{{ start_season }}</strong> to <strong>{{ end_season }}</strong> —
+    compare scoring patterns, match volume, and average runs per match across IPL editions.
+</div>
+
+{% endif %}
+
+<!-- ── Charts ─────────────────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Visualizations</div>
+
+<div class="chart-box">{{ chart1|safe }}</div>
+<div class="chart-box">{{ chart2|safe }}</div>
+<div class="chart-box">{{ chart3|safe }}</div>
+
+<!-- ── Season summary table ───────────────────────────────── -->
+<hr class="divider">
+<div style="display:flex;align-items:center;justify-content:space-between;">
+    <div>
+        <div class="section-label">Season breakdown</div>
+        <h2 style="margin-top:0;">Season Summary</h2>
+    </div>
+    {% if seasons %}
+    <span class="badge badge-teal">
+        <i class="ri-calendar-line"></i> &nbsp;{{ seasons|length }} seasons
+    </span>
+    {% endif %}
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Season</th>
+                <th>Total Runs</th>
+                <th>Matches</th>
+                <th>Avg Runs / Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in seasons %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td>
+                    <span class="badge badge-teal" style="font-size:10px;">{{ row.season }}</span>
+                </td>
+                <td style="color:var(--win);font-weight:600;">{{ row.total_runs }}</td>
+                <td style="color:var(--text-secondary);">{{ row.matches }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:var(--space-2);">
+                        <div class="progress-bar" style="width:80px;height:5px;">
+                            <div class="progress-fill" style="width:{{ [((row.avg_runs_per_match|float) / 400 * 100), 100]|min }}%;"></div>
+                        </div>
+                        <span style="font-size:12px;font-weight:600;color:var(--accent);">
+                            {{ "%.1f"|format(row.avg_runs_per_match|float) }}
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

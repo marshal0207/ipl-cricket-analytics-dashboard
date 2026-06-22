@@ -1,0 +1,1173 @@
+team1,team2,winner,team1_encoded,team2_encoded,winner_encoded
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Deccan Chargers,Kolkata Knight Riders,Kolkata Knight Riders,1,6,6
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Deccan Chargers,Delhi Capitals,Delhi Capitals,1,2,2
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Mumbai Indians,Deccan Chargers,Deccan Chargers,8,1,1
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Deccan Chargers,Punjab Kings,Punjab Kings,1,10,10
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Deccan Chargers,Royal Challengers Bengaluru,Royal Challengers Bengaluru,1,13,13
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Chennai Super Kings,Deccan Chargers,Deccan Chargers,0,1,1
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,6,1,6
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Delhi Capitals,Deccan Chargers,Delhi Capitals,2,1,2
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Delhi Capitals,Punjab Kings,Delhi Capitals,2,10,2
+Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,11,13,11
+Mumbai Indians,Deccan Chargers,Mumbai Indians,8,1,8
+Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,6,0,6
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,6,11,11
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Deccan Chargers,Punjab Kings,Punjab Kings,1,10,10
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Royal Challengers Bengaluru,Deccan Chargers,Royal Challengers Bengaluru,13,1,13
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Deccan Chargers,Chennai Super Kings,Chennai Super Kings,1,0,0
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Kolkata Knight Riders,Deccan Chargers,Deccan Chargers,6,1,1
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Deccan Chargers,Royal Challengers Bengaluru,Deccan Chargers,1,13,1
+Delhi Capitals,Chennai Super Kings,Delhi Capitals,2,0,2
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Deccan Chargers,Mumbai Indians,Deccan Chargers,1,8,1
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Chennai Super Kings,Deccan Chargers,Deccan Chargers,0,1,1
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Deccan Chargers,Delhi Capitals,Delhi Capitals,1,2,2
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Kolkata Knight Riders,Punjab Kings,Punjab Kings,6,10,10
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Chennai Super Kings,Deccan Chargers,Chennai Super Kings,0,1,0
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Deccan Chargers,Mumbai Indians,Deccan Chargers,1,8,1
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Deccan Chargers,Punjab Kings,Punjab Kings,1,10,10
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Deccan Chargers,Rajasthan Royals,Deccan Chargers,1,11,1
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Delhi Capitals,Deccan Chargers,Delhi Capitals,2,1,2
+Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,0,13,13
+Rajasthan Royals,Mumbai Indians,Rajasthan Royals,11,8,11
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Kolkata Knight Riders,Deccan Chargers,Deccan Chargers,6,1,1
+Punjab Kings,Deccan Chargers,Punjab Kings,10,1,10
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Royal Challengers Bengaluru,Deccan Chargers,Royal Challengers Bengaluru,13,1,13
+Delhi Capitals,Deccan Chargers,Deccan Chargers,2,1,1
+Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,0,13,13
+Deccan Chargers,Royal Challengers Bengaluru,Deccan Chargers,1,13,1
+Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,6,1,6
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Deccan Chargers,Chennai Super Kings,Deccan Chargers,1,0,1
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Deccan Chargers,Punjab Kings,Deccan Chargers,1,10,1
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Deccan Chargers,Delhi Capitals,Deccan Chargers,1,2,1
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Mumbai Indians,Deccan Chargers,Mumbai Indians,8,1,8
+Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,2,6,2
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,6,1,6
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Mumbai Indians,Deccan Chargers,Mumbai Indians,8,1,8
+Kolkata Knight Riders,Punjab Kings,Punjab Kings,6,10,10
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Rajasthan Royals,Deccan Chargers,Rajasthan Royals,11,1,11
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Royal Challengers Bengaluru,Deccan Chargers,Deccan Chargers,13,1,1
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Chennai Super Kings,Deccan Chargers,Deccan Chargers,0,1,1
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Deccan Chargers,Royal Challengers Bengaluru,Deccan Chargers,1,13,1
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Punjab Kings,Deccan Chargers,Deccan Chargers,10,1,1
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Deccan Chargers,Delhi Capitals,Deccan Chargers,1,2,1
+Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,8,6,6
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Chennai Super Kings,Deccan Chargers,Chennai Super Kings,0,1,0
+Deccan Chargers,Royal Challengers Bengaluru,Royal Challengers Bengaluru,1,13,13
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Kochi Tuskers Kerala,Royal Challengers Bengaluru,Royal Challengers Bengaluru,5,13,13
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Punjab Kings,Pune Warriors,Pune Warriors,10,9,9
+Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,6,1,6
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Kochi Tuskers Kerala,Pune Warriors,Pune Warriors,5,9,9
+Deccan Chargers,Royal Challengers Bengaluru,Deccan Chargers,1,13,1
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Mumbai Indians,Kochi Tuskers Kerala,Kochi Tuskers Kerala,8,5,5
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Deccan Chargers,Punjab Kings,Punjab Kings,1,10,10
+Pune Warriors,Delhi Capitals,Delhi Capitals,9,2,2
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Chennai Super Kings,Kochi Tuskers Kerala,Kochi Tuskers Kerala,0,5,5
+Deccan Chargers,Delhi Capitals,Deccan Chargers,1,2,1
+Pune Warriors,Mumbai Indians,Mumbai Indians,9,8,8
+Kochi Tuskers Kerala,Kolkata Knight Riders,Kochi Tuskers Kerala,5,6,5
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Delhi Capitals,Punjab Kings,Delhi Capitals,2,10,2
+Mumbai Indians,Deccan Chargers,Mumbai Indians,8,1,8
+Kochi Tuskers Kerala,Rajasthan Royals,Rajasthan Royals,5,11,11
+Chennai Super Kings,Pune Warriors,Chennai Super Kings,0,9,0
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Pune Warriors,Chennai Super Kings,Chennai Super Kings,9,0,0
+Deccan Chargers,Kochi Tuskers Kerala,Deccan Chargers,1,5,1
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Royal Challengers Bengaluru,Pune Warriors,Royal Challengers Bengaluru,13,9,13
+Delhi Capitals,Kochi Tuskers Kerala,Delhi Capitals,2,5,2
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Pune Warriors,Rajasthan Royals,Rajasthan Royals,9,11,11
+Chennai Super Kings,Deccan Chargers,Chennai Super Kings,0,1,0
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Delhi Capitals,Kochi Tuskers Kerala,Kochi Tuskers Kerala,2,5,5
+Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,6,1,6
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Mumbai Indians,Pune Warriors,Mumbai Indians,8,9,8
+Kochi Tuskers Kerala,Kolkata Knight Riders,Kochi Tuskers Kerala,5,6,5
+Deccan Chargers,Delhi Capitals,Delhi Capitals,1,2,2
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Kochi Tuskers Kerala,Royal Challengers Bengaluru,Royal Challengers Bengaluru,5,13,13
+Punjab Kings,Pune Warriors,Pune Warriors,10,9,9
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Deccan Chargers,Pune Warriors,Pune Warriors,1,9,9
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Kochi Tuskers Kerala,Punjab Kings,Punjab Kings,5,10,10
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Deccan Chargers,Mumbai Indians,Deccan Chargers,1,8,1
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Rajasthan Royals,Kochi Tuskers Kerala,Kochi Tuskers Kerala,11,5,5
+Pune Warriors,Deccan Chargers,Deccan Chargers,9,1,1
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Chennai Super Kings,Kochi Tuskers Kerala,Chennai Super Kings,0,5,0
+Pune Warriors,Kolkata Knight Riders,Kolkata Knight Riders,9,6,6
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Deccan Chargers,Punjab Kings,Deccan Chargers,1,10,1
+Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,0,13,13
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Pune Warriors,Mumbai Indians,Pune Warriors,9,8,9
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Chennai Super Kings,Deccan Chargers,Chennai Super Kings,0,1,0
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Pune Warriors,Punjab Kings,Pune Warriors,9,10,9
+Deccan Chargers,Mumbai Indians,Mumbai Indians,1,8,8
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Pune Warriors,Punjab Kings,Punjab Kings,9,10,10
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Deccan Chargers,Delhi Capitals,Delhi Capitals,1,2,2
+Chennai Super Kings,Pune Warriors,Pune Warriors,0,9,9
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,11,13,11
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Deccan Chargers,Rajasthan Royals,Rajasthan Royals,1,11,11
+Pune Warriors,Royal Challengers Bengaluru,Royal Challengers Bengaluru,9,13,13
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Deccan Chargers,Delhi Capitals,Delhi Capitals,1,2,2
+Chennai Super Kings,Pune Warriors,Chennai Super Kings,0,9,0
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Pune Warriors,Delhi Capitals,Pune Warriors,9,2,9
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Deccan Chargers,Kolkata Knight Riders,Kolkata Knight Riders,1,6,6
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Pune Warriors,Delhi Capitals,Delhi Capitals,9,2,2
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Deccan Chargers,Pune Warriors,Deccan Chargers,1,9,1
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Deccan Chargers,Mumbai Indians,Mumbai Indians,1,8,8
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Deccan Chargers,Pune Warriors,Deccan Chargers,1,9,1
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Mumbai Indians,Pune Warriors,Mumbai Indians,8,9,8
+Chennai Super Kings,Deccan Chargers,Chennai Super Kings,0,1,0
+Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,6,9,6
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Deccan Chargers,Royal Challengers Bengaluru,Royal Challengers Bengaluru,1,13,13
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Pune Warriors,Rajasthan Royals,Rajasthan Royals,9,11,11
+Punjab Kings,Deccan Chargers,Punjab Kings,10,1,10
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Royal Challengers Bengaluru,Pune Warriors,Royal Challengers Bengaluru,13,9,13
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Rajasthan Royals,Pune Warriors,Rajasthan Royals,11,9,11
+Deccan Chargers,Punjab Kings,Punjab Kings,1,10,10
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Rajasthan Royals,Deccan Chargers,Deccan Chargers,11,1,1
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,6,9,6
+Deccan Chargers,Royal Challengers Bengaluru,Deccan Chargers,1,13,1
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Sunrisers Hyderabad,Pune Warriors,Sunrisers Hyderabad,14,9,14
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Pune Warriors,Punjab Kings,Punjab Kings,9,10,10
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Rajasthan Royals,Pune Warriors,Pune Warriors,11,9,9
+Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,2,14,14
+Mumbai Indians,Pune Warriors,Mumbai Indians,8,9,8
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Pune Warriors,Chennai Super Kings,Pune Warriors,9,0,9
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Sunrisers Hyderabad,Pune Warriors,Sunrisers Hyderabad,14,9,14
+Rajasthan Royals,Mumbai Indians,Rajasthan Royals,11,8,11
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Pune Warriors,Punjab Kings,Punjab Kings,9,10,10
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Royal Challengers Bengaluru,Pune Warriors,Royal Challengers Bengaluru,13,9,13
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Delhi Capitals,Pune Warriors,Delhi Capitals,2,9,2
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Chennai Super Kings,Pune Warriors,Chennai Super Kings,0,9,0
+Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,8,14,14
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Royal Challengers Bengaluru,Pune Warriors,Royal Challengers Bengaluru,13,9,13
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,2,14,14
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Pune Warriors,Rajasthan Royals,Rajasthan Royals,9,11,11
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,14,13,13
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,6,9,6
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Pune Warriors,Mumbai Indians,Mumbai Indians,9,8,8
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Pune Warriors,Kolkata Knight Riders,Pune Warriors,9,6,9
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Pune Warriors,Delhi Capitals,Pune Warriors,9,2,9
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,6,14,14
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Rajasthan Royals,Punjab Kings,Punjab Kings,11,10,10
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Punjab Kings,Sunrisers Hyderabad,Punjab Kings,10,14,10
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,14,8,14
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,14,13,13
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Sunrisers Hyderabad,Punjab Kings,Punjab Kings,14,10,10
+Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,8,6,6
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Chennai Super Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,0,13,13
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,13,14,14
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,0,14,14
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,8,6,6
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,13,14,14
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,14,0,14
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Mumbai Indians,Rising Pune Supergiants,Rising Pune Supergiants,8,12,12
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Punjab Kings,Gujarat Lions,Gujarat Lions,10,3,3
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Rising Pune Supergiants,Gujarat Lions,Gujarat Lions,12,3,3
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Mumbai Indians,Gujarat Lions,Gujarat Lions,8,3,3
+Rising Pune Supergiants,Punjab Kings,Punjab Kings,12,10,10
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,8,14,14
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,3,14,14
+Royal Challengers Bengaluru,Rising Pune Supergiants,Royal Challengers Bengaluru,13,12,13
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Royal Challengers Bengaluru,Gujarat Lions,Gujarat Lions,13,3,3
+Rising Pune Supergiants,Kolkata Knight Riders,Kolkata Knight Riders,12,6,6
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Sunrisers Hyderabad,Rising Pune Supergiants,Sunrisers Hyderabad,14,12,14
+Gujarat Lions,Delhi Capitals,Gujarat Lions,3,2,3
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Rising Pune Supergiants,Gujarat Lions,Gujarat Lions,12,3,3
+Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,2,6,2
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Punjab Kings,Gujarat Lions,Punjab Kings,10,3,10
+Rising Pune Supergiants,Mumbai Indians,Mumbai Indians,12,8,8
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Gujarat Lions,Delhi Capitals,Delhi Capitals,3,2,2
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Delhi Capitals,Rising Pune Supergiants,Rising Pune Supergiants,2,12,12
+Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,3,14,14
+Rising Pune Supergiants,Royal Challengers Bengaluru,Royal Challengers Bengaluru,12,13,13
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,14,8,14
+Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,6,3,3
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Sunrisers Hyderabad,Rising Pune Supergiants,Sunrisers Hyderabad,14,12,14
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Royal Challengers Bengaluru,Gujarat Lions,Royal Challengers Bengaluru,13,3,13
+Rising Pune Supergiants,Kolkata Knight Riders,Rising Pune Supergiants,12,6,12
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Delhi Capitals,Rising Pune Supergiants,Delhi Capitals,2,12,2
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,6,3,3
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Punjab Kings,Rising Pune Supergiants,Rising Pune Supergiants,10,12,12
+Mumbai Indians,Gujarat Lions,Gujarat Lions,8,3,3
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Gujarat Lions,Royal Challengers Bengaluru,Royal Challengers Bengaluru,3,13,13
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,3,14,14
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Mumbai Indians,Rising Pune Supergiants,Rising Pune Supergiants,8,12,12
+Gujarat Lions,Kolkata Knight Riders,Kolkata Knight Riders,3,6,6
+Rising Pune Supergiants,Punjab Kings,Punjab Kings,12,10,10
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,3,14,14
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Delhi Capitals,Rising Pune Supergiants,Delhi Capitals,2,12,2
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Rising Pune Supergiants,Gujarat Lions,Gujarat Lions,12,3,3
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Delhi Capitals,Punjab Kings,Delhi Capitals,2,10,2
+Gujarat Lions,Mumbai Indians,Mumbai Indians,3,8,8
+Rising Pune Supergiants,Royal Challengers Bengaluru,Rising Pune Supergiants,12,13,12
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Royal Challengers Bengaluru,Gujarat Lions,Royal Challengers Bengaluru,13,3,13
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,6,3,3
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Sunrisers Hyderabad,Rising Pune Supergiants,Rising Pune Supergiants,14,12,12
+Punjab Kings,Gujarat Lions,Punjab Kings,10,3,10
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Rising Pune Supergiants,Mumbai Indians,Rising Pune Supergiants,12,8,12
+Rising Pune Supergiants,Kolkata Knight Riders,Kolkata Knight Riders,12,6,6
+Royal Challengers Bengaluru,Gujarat Lions,Gujarat Lions,13,3,3
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Rising Pune Supergiants,Royal Challengers Bengaluru,Rising Pune Supergiants,12,13,12
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Gujarat Lions,Rising Pune Supergiants,Rising Pune Supergiants,3,12,12
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Kolkata Knight Riders,Rising Pune Supergiants,Rising Pune Supergiants,6,12,12
+Gujarat Lions,Delhi Capitals,Delhi Capitals,3,2,2
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Rising Pune Supergiants,Sunrisers Hyderabad,Rising Pune Supergiants,12,14,12
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Punjab Kings,Gujarat Lions,Gujarat Lions,10,3,3
+Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,8,14,14
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Gujarat Lions,Delhi Capitals,Delhi Capitals,3,2,2
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Delhi Capitals,Rising Pune Supergiants,Delhi Capitals,2,12,2
+Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,3,14,14
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Punjab Kings,Rising Pune Supergiants,Rising Pune Supergiants,10,12,12
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Rising Pune Supergiants,Mumbai Indians,Rising Pune Supergiants,12,8,12
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Mumbai Indians,Rising Pune Supergiants,Mumbai Indians,8,12,8
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,11,14,14
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,8,14,14
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,6,14,14
+Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,11,13,11
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Punjab Kings,Sunrisers Hyderabad,Punjab Kings,10,14,10
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,14,8,14
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,2,6,2
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,2,14,14
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Rajasthan Royals,Punjab Kings,Punjab Kings,11,10,10
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,2,14,14
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Delhi Capitals,Chennai Super Kings,Delhi Capitals,2,0,2
+Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,11,13,11
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,6,11,6
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Mumbai Indians,Royal Challengers Bengaluru,Mumbai Indians,8,13,8
+Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,11,14,14
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Delhi Capitals,Sunrisers Hyderabad,Sunrisers Hyderabad,2,14,14
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Sunrisers Hyderabad,Punjab Kings,Punjab Kings,14,10,10
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,0,14,14
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,13,6,13
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,6,14,14
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,6,11,11
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,14,13,13
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Mumbai Indians,Chennai Super Kings,Mumbai Indians,8,0,8
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,8,14,14
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Punjab Kings,Sunrisers Hyderabad,Punjab Kings,10,14,10
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,6,0,6
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,13,14,14
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,6,11,6
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,14,11,11
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,2,6,2
+Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,14,0,14
+Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,11,14,14
+Delhi Capitals,Royal Challengers Bengaluru,Delhi Capitals,2,13,2
+Kolkata Knight Riders,Punjab Kings,Punjab Kings,6,10,10
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,6,10,6
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,6,11,6
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Delhi Capitals,Chennai Super Kings,Delhi Capitals,2,0,2
+Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,13,6,13
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,13,14,14
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,8,6,8
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Delhi Capitals,Rajasthan Royals,Rajasthan Royals,2,11,11
+Punjab Kings,Chennai Super Kings,Chennai Super Kings,10,0,0
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Royal Challengers Bengaluru,Kolkata Knight Riders,Royal Challengers Bengaluru,13,6,13
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,0,11,0
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,6,11,11
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Rajasthan Royals,Sunrisers Hyderabad,Rajasthan Royals,11,14,11
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,8,6,6
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,11,14,14
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Kolkata Knight Riders,Punjab Kings,Punjab Kings,6,10,10
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,6,11,6
+Punjab Kings,Sunrisers Hyderabad,Punjab Kings,10,14,10
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Chennai Super Kings,Delhi Capitals,Delhi Capitals,0,2,2
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Delhi Capitals,Chennai Super Kings,Chennai Super Kings,2,0,0
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Lucknow Super Giants,Gujarat Titans,Gujarat Titans,7,4,4
+Rajasthan Royals,Sunrisers Hyderabad,Rajasthan Royals,11,14,11
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Chennai Super Kings,Lucknow Super Giants,Lucknow Super Giants,0,7,7
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Rajasthan Royals,Mumbai Indians,Rajasthan Royals,11,8,11
+Gujarat Titans,Delhi Capitals,Gujarat Titans,4,2,4
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Lucknow Super Giants,Sunrisers Hyderabad,Lucknow Super Giants,7,14,7
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,8,6,6
+Delhi Capitals,Lucknow Super Giants,Lucknow Super Giants,2,7,7
+Punjab Kings,Gujarat Titans,Gujarat Titans,10,4,4
+Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,0,14,14
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Delhi Capitals,Kolkata Knight Riders,Delhi Capitals,2,6,2
+Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,11,7,11
+Gujarat Titans,Sunrisers Hyderabad,Sunrisers Hyderabad,4,14,14
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Gujarat Titans,Rajasthan Royals,Gujarat Titans,4,11,4
+Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,6,14,14
+Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,7,8,7
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Chennai Super Kings,Gujarat Titans,Gujarat Titans,0,4,4
+Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,11,6,11
+Royal Challengers Bengaluru,Lucknow Super Giants,Royal Challengers Bengaluru,13,7,13
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Gujarat Titans,Kolkata Knight Riders,Gujarat Titans,4,6,4
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Sunrisers Hyderabad,13,14,14
+Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,7,8,7
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Rajasthan Royals,Royal Challengers Bengaluru,Rajasthan Royals,11,13,11
+Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,14,4,4
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,7,10,7
+Royal Challengers Bengaluru,Gujarat Titans,Gujarat Titans,13,4,4
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Lucknow Super Giants,Delhi Capitals,Lucknow Super Giants,7,2,7
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Gujarat Titans,Punjab Kings,Punjab Kings,4,10,10
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Mumbai Indians,Gujarat Titans,Mumbai Indians,8,4,8
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,7,6,7
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Gujarat Titans,Lucknow Super Giants,Gujarat Titans,4,7,4
+Rajasthan Royals,Delhi Capitals,Delhi Capitals,11,2,2
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Punjab Kings,Royal Challengers Bengaluru,Punjab Kings,10,13,10
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Chennai Super Kings,Gujarat Titans,Gujarat Titans,0,4,4
+Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,11,7,11
+Delhi Capitals,Punjab Kings,Delhi Capitals,2,10,2
+Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,14,8,14
+Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,7,6,7
+Gujarat Titans,Royal Challengers Bengaluru,Royal Challengers Bengaluru,4,13,13
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Sunrisers Hyderabad,Punjab Kings,Punjab Kings,14,10,10
+Rajasthan Royals,Gujarat Titans,Gujarat Titans,11,4,4
+Royal Challengers Bengaluru,Lucknow Super Giants,Royal Challengers Bengaluru,13,7,13
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Rajasthan Royals,Gujarat Titans,Gujarat Titans,11,4,4
+Chennai Super Kings,Gujarat Titans,Gujarat Titans,0,4,4
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Lucknow Super Giants,Delhi Capitals,Lucknow Super Giants,7,2,7
+Rajasthan Royals,Sunrisers Hyderabad,Rajasthan Royals,11,14,11
+Mumbai Indians,Royal Challengers Bengaluru,Royal Challengers Bengaluru,8,13,13
+Chennai Super Kings,Lucknow Super Giants,Chennai Super Kings,0,7,0
+Delhi Capitals,Gujarat Titans,Gujarat Titans,2,4,4
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,14,7,7
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Gujarat Titans,Kolkata Knight Riders,Kolkata Knight Riders,4,6,6
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Royal Challengers Bengaluru,Lucknow Super Giants,Lucknow Super Giants,13,7,7
+Delhi Capitals,Mumbai Indians,Mumbai Indians,2,8,8
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Punjab Kings,Gujarat Titans,Gujarat Titans,10,4,4
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Lucknow Super Giants,Punjab Kings,Punjab Kings,7,10,10
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Gujarat Titans,Rajasthan Royals,Rajasthan Royals,4,11,11
+Chennai Super Kings,Royal Challengers Bengaluru,Chennai Super Kings,0,13,0
+Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,8,14,8
+Lucknow Super Giants,Rajasthan Royals,Lucknow Super Giants,7,11,7
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Kolkata Knight Riders,Delhi Capitals,Delhi Capitals,6,2,2
+Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,14,0,0
+Gujarat Titans,Lucknow Super Giants,Gujarat Titans,4,7,4
+Punjab Kings,Mumbai Indians,Punjab Kings,10,8,10
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Delhi Capitals,Sunrisers Hyderabad,Delhi Capitals,2,14,2
+Gujarat Titans,Mumbai Indians,Gujarat Titans,4,8,4
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,7,10,7
+Kolkata Knight Riders,Gujarat Titans,Gujarat Titans,6,4,4
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Rajasthan Royals,Mumbai Indians,Mumbai Indians,11,8,8
+Royal Challengers Bengaluru,Lucknow Super Giants,Royal Challengers Bengaluru,13,7,13
+Delhi Capitals,Gujarat Titans,Delhi Capitals,2,4,2
+Punjab Kings,Mumbai Indians,Mumbai Indians,10,8,8
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Rajasthan Royals,Gujarat Titans,Gujarat Titans,11,4,4
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Gujarat Titans,Lucknow Super Giants,Gujarat Titans,4,7,4
+Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,11,14,14
+Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,10,6,6
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,6,11,11
+Mumbai Indians,Gujarat Titans,Mumbai Indians,8,4,8
+Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,14,7,7
+Punjab Kings,Delhi Capitals,Punjab Kings,10,2,10
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,4,14,4
+Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,7,8,7
+Delhi Capitals,Punjab Kings,Delhi Capitals,2,10,2
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,14,13,13
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,7,6,7
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Royal Challengers Bengaluru,Gujarat Titans,Gujarat Titans,13,4,4
+Chennai Super Kings,Gujarat Titans,Chennai Super Kings,0,4,0
+Mumbai Indians,Lucknow Super Giants,Mumbai Indians,8,7,8
+Gujarat Titans,Mumbai Indians,Gujarat Titans,4,8,4
+Gujarat Titans,Chennai Super Kings,Gujarat Titans,4,0,4
+Royal Challengers Bengaluru,Chennai Super Kings,Chennai Super Kings,13,0,0
+Delhi Capitals,Punjab Kings,Punjab Kings,2,10,10
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,11,7,11
+Gujarat Titans,Mumbai Indians,Gujarat Titans,4,8,4
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Chennai Super Kings,Gujarat Titans,Chennai Super Kings,0,4,0
+Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,14,8,14
+Rajasthan Royals,Delhi Capitals,Rajasthan Royals,11,2,11
+Royal Challengers Bengaluru,Kolkata Knight Riders,Kolkata Knight Riders,13,6,6
+Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,7,10,7
+Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,14,4,4
+Delhi Capitals,Chennai Super Kings,Delhi Capitals,2,0,2
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Lucknow Super Giants,Royal Challengers Bengaluru,Lucknow Super Giants,7,13,7
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Gujarat Titans,Punjab Kings,Punjab Kings,4,10,10
+Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,0,14,14
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Lucknow Super Giants,Gujarat Titans,Lucknow Super Giants,7,4,7
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Sunrisers Hyderabad,Punjab Kings,Sunrisers Hyderabad,14,10,14
+Rajasthan Royals,Gujarat Titans,Gujarat Titans,11,4,4
+Royal Challengers Bengaluru,Mumbai Indians,Mumbai Indians,13,8,8
+Lucknow Super Giants,Delhi Capitals,Delhi Capitals,7,2,2
+Punjab Kings,Rajasthan Royals,Rajasthan Royals,10,11,11
+Lucknow Super Giants,Kolkata Knight Riders,Kolkata Knight Riders,7,6,6
+Chennai Super Kings,Mumbai Indians,Chennai Super Kings,0,8,0
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,6,11,11
+Gujarat Titans,Delhi Capitals,Delhi Capitals,4,2,2
+Mumbai Indians,Punjab Kings,Mumbai Indians,8,10,8
+Chennai Super Kings,Lucknow Super Giants,Lucknow Super Giants,0,7,7
+Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,14,2,14
+Kolkata Knight Riders,Royal Challengers Bengaluru,Kolkata Knight Riders,6,13,6
+Punjab Kings,Gujarat Titans,Gujarat Titans,10,4,4
+Mumbai Indians,Rajasthan Royals,Rajasthan Royals,8,11,11
+Chennai Super Kings,Lucknow Super Giants,Lucknow Super Giants,0,7,7
+Delhi Capitals,Gujarat Titans,Delhi Capitals,2,4,2
+Royal Challengers Bengaluru,Sunrisers Hyderabad,Royal Challengers Bengaluru,13,14,13
+Kolkata Knight Riders,Punjab Kings,Punjab Kings,6,10,10
+Delhi Capitals,Mumbai Indians,Delhi Capitals,2,8,2
+Lucknow Super Giants,Rajasthan Royals,Rajasthan Royals,7,11,11
+Gujarat Titans,Royal Challengers Bengaluru,Royal Challengers Bengaluru,4,13,13
+Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,0,14,0
+Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,2,6,6
+Mumbai Indians,Lucknow Super Giants,Lucknow Super Giants,8,7,7
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Gujarat Titans,Royal Challengers Bengaluru,Royal Challengers Bengaluru,4,13,13
+Chennai Super Kings,Punjab Kings,Chennai Super Kings,0,10,0
+Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,6,7,6
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Delhi Capitals,Rajasthan Royals,Delhi Capitals,2,11,2
+Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,7,14,14
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Gujarat Titans,Chennai Super Kings,Gujarat Titans,4,0,4
+Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,6,8,6
+Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,11,0,0
+Royal Challengers Bengaluru,Delhi Capitals,Royal Challengers Bengaluru,13,2,13
+Delhi Capitals,Lucknow Super Giants,Delhi Capitals,2,7,2
+Rajasthan Royals,Punjab Kings,Punjab Kings,11,10,10
+Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,7,8,7
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,14,6,6
+Kolkata Knight Riders,Royal Challengers Bengaluru,Royal Challengers Bengaluru,6,13,13
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Mumbai Indians,Chennai Super Kings,Chennai Super Kings,8,0,0
+Lucknow Super Giants,Delhi Capitals,Delhi Capitals,7,2,2
+Punjab Kings,Gujarat Titans,Punjab Kings,10,4,10
+Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,11,6,6
+Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,14,7,7
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Gujarat Titans,Mumbai Indians,Gujarat Titans,4,8,4
+Sunrisers Hyderabad,Delhi Capitals,Delhi Capitals,14,2,2
+Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,11,0,11
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Lucknow Super Giants,Punjab Kings,Punjab Kings,7,10,10
+Royal Challengers Bengaluru,Gujarat Titans,Gujarat Titans,13,4,4
+Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,6,14,6
+Lucknow Super Giants,Mumbai Indians,Lucknow Super Giants,7,8,7
+Delhi Capitals,Chennai Super Kings,Delhi Capitals,2,0,2
+Rajasthan Royals,Punjab Kings,Rajasthan Royals,11,10,11
+Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,7,6,7
+Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,14,4,4
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Punjab Kings,Chennai Super Kings,Punjab Kings,10,0,10
+Gujarat Titans,Rajasthan Royals,Gujarat Titans,4,11,4
+Royal Challengers Bengaluru,Delhi Capitals,Delhi Capitals,13,2,2
+Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,0,6,6
+Gujarat Titans,Lucknow Super Giants,Lucknow Super Giants,4,7,7
+Punjab Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,10,14,14
+Rajasthan Royals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,11,13,13
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Lucknow Super Giants,Chennai Super Kings,Chennai Super Kings,7,0,0
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Royal Challengers Bengaluru,Punjab Kings,Punjab Kings,13,10,10
+Delhi Capitals,Gujarat Titans,Gujarat Titans,2,4,4
+Lucknow Super Giants,Rajasthan Royals,Lucknow Super Giants,7,11,7
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Chennai Super Kings,Mumbai Indians,Mumbai Indians,0,8,8
+Gujarat Titans,Kolkata Knight Riders,Gujarat Titans,4,6,4
+Lucknow Super Giants,Delhi Capitals,Delhi Capitals,7,2,2
+Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,14,8,8
+Royal Challengers Bengaluru,Rajasthan Royals,Royal Challengers Bengaluru,13,11,13
+Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,0,14,14
+Punjab Kings,Kolkata Knight Riders,Punjab Kings,10,6,10
+Mumbai Indians,Lucknow Super Giants,Mumbai Indians,8,7,8
+Delhi Capitals,Royal Challengers Bengaluru,Royal Challengers Bengaluru,2,13,13
+Gujarat Titans,Rajasthan Royals,Rajasthan Royals,4,11,11
+Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,6,2,6
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Mumbai Indians,Rajasthan Royals,Mumbai Indians,8,11,8
+Gujarat Titans,Sunrisers Hyderabad,Gujarat Titans,4,14,4
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,6,11,6
+Punjab Kings,Lucknow Super Giants,Punjab Kings,10,7,10
+Mumbai Indians,Gujarat Titans,Mumbai Indians,8,4,8
+Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,6,0,0
+Punjab Kings,Rajasthan Royals,Punjab Kings,10,11,10
+Delhi Capitals,Gujarat Titans,Gujarat Titans,2,4,4
+Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,7,14,14
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Mumbai Indians,Delhi Capitals,Mumbai Indians,8,2,8
+Lucknow Super Giants,Gujarat Titans,Lucknow Super Giants,7,4,7
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Sunrisers Hyderabad,14,13,14
+Chennai Super Kings,Gujarat Titans,Chennai Super Kings,0,4,0
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Lucknow Super Giants,Royal Challengers Bengaluru,Royal Challengers Bengaluru,7,13,13
+Punjab Kings,Royal Challengers Bengaluru,Royal Challengers Bengaluru,10,13,13
+Mumbai Indians,Gujarat Titans,Mumbai Indians,8,4,8
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10
+Royal Challengers Bengaluru,Punjab Kings,Royal Challengers Bengaluru,13,10,13
+Punjab Kings,Delhi Capitals,Delhi Capitals,10,2,2
+Sunrisers Hyderabad,Royal Challengers Bengaluru,Royal Challengers Bengaluru,14,13,13
+Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,6,8,8
+Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,0,11,11
+Gujarat Titans,Punjab Kings,Punjab Kings,4,10,10
+Lucknow Super Giants,Delhi Capitals,Delhi Capitals,7,2,2
+Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,14,6,14
+Chennai Super Kings,Punjab Kings,Punjab Kings,0,10,10
+Mumbai Indians,Delhi Capitals,Delhi Capitals,8,2,2
+Rajasthan Royals,Gujarat Titans,Rajasthan Royals,11,4,11
+Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,14,7,7
+Royal Challengers Bengaluru,Chennai Super Kings,Royal Challengers Bengaluru,13,0,13
+Rajasthan Royals,Mumbai Indians,Rajasthan Royals,11,8,11
+Gujarat Titans,Delhi Capitals,Gujarat Titans,4,2,4
+Kolkata Knight Riders,Lucknow Super Giants,Lucknow Super Giants,6,7,7
+Royal Challengers Bengaluru,Rajasthan Royals,Rajasthan Royals,13,11,11
+Sunrisers Hyderabad,Punjab Kings,Punjab Kings,14,10,10
+Chennai Super Kings,Delhi Capitals,Chennai Super Kings,0,2,0
+Lucknow Super Giants,Gujarat Titans,Gujarat Titans,7,4,4
+Royal Challengers Bengaluru,Mumbai Indians,Royal Challengers Bengaluru,13,8,13
+Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,14,11,14
+Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,0,6,0
+Lucknow Super Giants,Royal Challengers Bengaluru,Royal Challengers Bengaluru,7,13,13
+Mumbai Indians,Punjab Kings,Punjab Kings,8,10,10

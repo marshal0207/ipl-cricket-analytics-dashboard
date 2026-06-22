@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Cricket Analytics Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons (free, CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body>
+
+<!-- Mobile top bar -->
+<div class="mobile-topbar">
+    <span class="brand-name" style="display:flex;align-items:center;gap:8px;">
+    <img src="{{ url_for('static', filename='images/ipl.png') }}" style="width:20px;height:20px;object-fit:contain;"> IPL Analytics
+</span>
+    <button id="menu-toggle" aria-label="Open menu">
+        <i class="ri-menu-line"></i> Menu
+    </button>
+</div>
+
+<!-- Sidebar overlay (mobile) -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<div class="app-layout">
+
+    <!-- ── Sidebar ─────────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <img src="{{ url_for('static', filename='images/ipl.png') }}" class="brand-icon" alt="IPL">
+            <div>
+                <h2>IPL Analytics</h2>
+                <p>Cricket Intelligence</p>
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+
+            <span class="nav-section-label">Main</span>
+            <a href="/" class="nav-link">
+                <i class="ri-home-5-line"></i> Home
+            </a>
+            <a href="/schedule" class="nav-link">
+                <i class="ri-calendar-event-line"></i> Match Schedule
+            </a>
+            <a href="/points-table" class="nav-link">
+                <i class="ri-trophy-line"></i> Points Table
+            </a>
+            <a href="/scorecard" class="nav-link">
+                <i class="ri-file-list-3-line"></i> Match Scorecard
+            </a>
+
+            <span class="nav-section-label">Intelligence</span>
+            <a href="/predict" class="nav-link">
+                <i class="ri-robot-2-line"></i> Match Prediction
+            </a>
+            <a href="/players" class="nav-link">
+                <i class="ri-user-3-line"></i> Player Analytics
+            </a>
+            <a href="/teams" class="nav-link">
+                <i class="ri-shield-star-line"></i> Team Analytics
+            </a>
+
+            <span class="nav-section-label">Explore</span>
+            <a href="/seasons" class="nav-link">
+                <i class="ri-line-chart-line"></i> Season Analytics
+            </a>
+            <a href="/venues" class="nav-link">
+                <i class="ri-building-2-line"></i> Venue Analytics
+            </a>
+            <a href="/toss" class="nav-link">
+                <i class="ri-swap-line"></i> Toss Analysis
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p style="color:var(--accent);font-size:11px;font-weight:600;letter-spacing:0.04em;">EXPLAINABLE AI</p>
+            <span>Cricket Intelligence Platform</span>
+        </div>
+
+    </aside>
+
+    <!-- ── Main Content ────────────────────────────────── -->
+    <main class="main">
+
+        <div class="topbar">
+            <div>
+                <h3>IPL Cricket Analytics</h3>
+                <p>Data-driven insights, prediction &amp; explainability</p>
+            </div>
+            <div class="status-pill">
+                <span></span>
+                Model Active
+            </div>
+        </div>
+
+        <section class="content-card">
+            {% block content %}{% endblock %}
+        </section>
+
+    </main>
+</div>
+
+<!-- ── Scripts ─────────────────────────────────────────── -->
+<script>
+    /* Active nav link */
+    const currentPath = window.location.pathname;
+    document.querySelectorAll(".nav-link").forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === currentPath || (currentPath === "/" && href === "/")) {
+            link.classList.add("active");
+        }
+    });
+
+    /* Mobile sidebar toggle */
+    const menuBtn     = document.getElementById("menu-toggle");
+    const sidebar     = document.getElementById("sidebar");
+    const overlay     = document.getElementById("sidebar-overlay");
+
+    function openSidebar() {
+        sidebar.classList.add("open");
+        overlay.classList.add("visible");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("visible");
+        document.body.style.overflow = "";
+    }
+
+    menuBtn.addEventListener("click", openSidebar);
+    overlay.addEventListener("click", closeSidebar);
+
+    /* Close sidebar on nav link click (mobile) */
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 820) closeSidebar();
+        });
+    });
+</script>
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Scroll to top" style="
+    position:fixed; bottom:24px; right:24px; width:42px; height:42px;
+    border-radius:50%; background:var(--accent); color:#04342C; border:none;
+    display:none; align-items:center; justify-content:center; cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,201,167,0.3); z-index:120; transition:opacity 0.2s;
+"><i class="ri-arrow-up-line"></i></button>
+
+<script>
+    const scrollBtn = document.getElementById("scroll-top");
+    window.addEventListener("scroll", () => {
+        scrollBtn.style.display = window.scrollY > 300 ? "flex" : "none";
+    });
+    scrollBtn.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
+</script>
+
+
+
+{% block scripts %}{% endblock %}
+
+</body>
+</html>

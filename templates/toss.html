@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="toss-hero">
+    <div>
+        <div class="section-badge">🪙 Toss Impact Study</div>
+        <h1>Toss Intelligence Dashboard</h1>
+        <p class="page-subtitle">
+            Understand how toss decisions, venues, and seasonal patterns influence IPL match outcomes.
+        </p>
+    </div>
+
+    <div class="toss-summary-card">
+        <span>🏆 Key Takeaway</span>
+        <h2>{{ toss_kpis.toss_winner_match_win_percentage }}%</h2>
+        <p>
+            Toss winners won the match — showing toss has only a moderate impact.
+        </p>
+    </div>
+</div>
+
+<div class="kpi-grid">
+    <div class="kpi-card toss-hover">
+        <span class="kpi-label">🟢 Toss Winner Won</span>
+        <h2>{{ toss_kpis.toss_winner_match_win_percentage }}%</h2>
+        <p>{{ toss_kpis.toss_winner_match_wins }} wins after winning toss</p>
+        <small class="kpi-badge">Moderate impact</small>
+    </div>
+
+    <div class="kpi-card toss-hover">
+        <span class="kpi-label">🏏 Bat First Chosen</span>
+        <h2>{{ toss_kpis.bat_first_count }}</h2>
+        <p>{{ toss_kpis.bat_first_pct }}% of matches</p>
+        <small class="kpi-badge warning">Less preferred</small>
+    </div>
+
+    <div class="kpi-card toss-hover">
+        <span class="kpi-label">🏃 Field First Chosen</span>
+        <h2>{{ toss_kpis.field_first_count }}</h2>
+        <p>{{ toss_kpis.field_first_pct }}% of matches</p>
+        <small class="kpi-badge">Most preferred</small>
+    </div>
+
+    <div class="kpi-card toss-hover">
+        <span class="kpi-label">📊 Total Toss Records</span>
+        <h2>{{ toss_kpis.total_tosses }}</h2>
+        <p>All IPL seasons</p>
+        <small class="kpi-badge neutral">2008–2026</small>
+    </div>
+</div>
+
+<div class="toss-chart-grid">
+
+    <div class="chart-card compact-chart">
+        {{ chart1 | safe }}
+        <div class="chart-insight">
+            Nearly two-thirds of IPL teams prefer to field first.
+        </div>
+    </div>
+
+    <div class="chart-card compact-chart">
+        {{ chart2 | safe }}
+        <div class="chart-insight">
+            Winning the toss gives only a marginal advantage.
+        </div>
+    </div>
+
+    {% if chart3 %}
+    <div class="chart-card compact-chart">
+        {{ chart3 | safe }}
+        <div class="chart-insight">
+            Field-first decisions increased strongly in recent IPL seasons.
+        </div>
+    </div>
+    {% endif %}
+
+    {% if chart4 %}
+    <div class="chart-card compact-chart">
+        {{ chart4 | safe }}
+        <div class="chart-insight">
+            Some venues show stronger toss-outcome relationship than others.
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<!-- AI INSIGHTS -->
+<div class="toss-insight-grid">
+    {% for insight in toss_insights %}
+    <div class="toss-insight-item">
+        <span>✓</span>
+        <p>{{ insight }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- EXPLAINABILITY -->
+<div class="xai-meter">
+    {% for factor, value in xai_importance.items() %}
+    <div class="xai-row">
+        <div class="xai-label">{{ factor }}</div>
+        <div class="xai-bar-wrap">
+            <div class="xai-bar" style="width: {{ value }}%;"></div>
+        </div>
+        <div class="xai-value">{{ value }}%</div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

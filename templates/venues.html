@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-building-2-line"></i> Ground-Level Insights
+</div>
+<h1>Venue Analytics</h1>
+<p class="intro">
+    Explore match volumes, total runs scored, and average scoring rates across IPL venues.
+    Search any ground to get a focused breakdown.
+</p>
+
+<!-- ── Search form ────────────────────────────────────────── -->
+<form method="GET" action="/venues" class="search-form">
+    <div style="position:relative;flex:1;">
+        <i class="ri-search-line" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:15px;pointer-events:none;"></i>
+        <input
+            type="text"
+            name="venue_name"
+            placeholder="Search venue — e.g. Wankhede, Eden, Chinnaswamy"
+            value="{{ venue_name }}"
+            style="padding-left:36px;"
+        >
+    </div>
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-search-line"></i> Search
+    </button>
+</form>
+
+{% if venue_name %}
+
+<!-- ── Search results ─────────────────────────────────────── -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin:var(--space-5) 0 var(--space-3);">
+    <div>
+        <div class="section-label">Search results</div>
+        <h2 style="margin:0;">Results for "<span style="color:var(--accent);">{{ venue_name }}</span>"</h2>
+    </div>
+</div>
+
+{% if venue_result %}
+
+<!-- Venue highlight cards -->
+{% for row in venue_result %}
+<div style="
+    background:var(--bg-card-alt);
+    border:1px solid var(--accent-border);
+    border-left:3px solid var(--accent);
+    border-radius:var(--radius-lg);
+    padding:var(--space-5);
+    margin-bottom:var(--space-3);
+">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3);">
+        <div>
+            <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-2);">
+                <i class="ri-building-2-line" style="color:var(--accent);font-size:18px;"></i>
+                <h3 style="margin:0;color:var(--text-primary);font-size:16px;">{{ row.venue }}</h3>
+            </div>
+            <span class="badge badge-teal">IPL Venue</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4);text-align:center;">
+            <div>
+                <p style="font-size:20px;font-weight:700;color:var(--text-primary);">{{ row.matches }}</p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;font-weight:500;">Matches</p>
+            </div>
+            <div>
+                <p style="font-size:20px;font-weight:700;color:var(--win);">{{ row.total_runs }}</p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;font-weight:500;">Total Runs</p>
+            </div>
+            <div>
+                <p style="font-size:20px;font-weight:700;color:var(--text-secondary);">{{ row.balls }}</p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;font-weight:500;">Balls</p>
+            </div>
+            <div>
+                <p style="font-size:20px;font-weight:700;color:var(--accent);">{{ "%.1f"|format(row.avg_runs_per_match) }}</p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;font-weight:500;">Avg Runs/Match</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% else %}
+<div class="info">
+    <i class="ri-map-pin-line"></i> &nbsp;No venue found matching "<strong>{{ venue_name }}</strong>". Try a partial name like "Wankhede" or "Eden".
+</div>
+{% endif %}
+
+<hr class="divider">
+
+{% endif %}
+
+<!-- ── Charts ─────────────────────────────────────────────── -->
+<div class="section-label">Visualizations</div>
+<div class="chart-box">{{ chart1|safe }}</div>
+<div class="chart-box">{{ chart2|safe }}</div>
+
+<!-- ── All venues table ───────────────────────────────────── -->
+<hr class="divider">
+<div style="display:flex;align-items:center;justify-content:space-between;">
+    <div>
+        <div class="section-label">All venues</div>
+        <h2 style="margin-top:0;">Venue Statistics</h2>
+    </div>
+    <span class="badge badge-teal">
+        <i class="ri-building-2-line"></i> &nbsp;{{ venues|length }} venues
+    </span>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Venue</th>
+                <th>Matches</th>
+                <th>Total Runs</th>
+                <th>Balls</th>
+                <th>Avg Runs / Match</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in venues %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:var(--space-2);">
+                        <i class="ri-map-pin-line" style="color:var(--text-muted);font-size:13px;flex-shrink:0;"></i>
+                        <span style="font-weight:600;color:var(--text-primary);">{{ row.venue }}</span>
+                    </div>
+                </td>
+                <td style="color:var(--text-secondary);">{{ row.matches }}</td>
+                <td style="color:var(--win);font-weight:600;">{{ row.total_runs }}</td>
+                <td style="color:var(--text-muted);font-size:12px;">{{ row.balls }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:var(--space-2);">
+                        <div class="progress-bar" style="width:80px;height:5px;">
+                            <div class="progress-fill" style="width:{{ [((row.avg_runs_per_match|float) / 400 * 100), 100]|min }}%;"></div>
+                        </div>
+                        <span style="font-size:12px;font-weight:600;color:var(--accent);">
+                            {{ "%.1f"|format(row.avg_runs_per_match) }}
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-user-3-line"></i> Batting · Bowling · Explainable Insights
+</div>
+<h1>Player Analytics</h1>
+<p class="intro">
+    Search any IPL player to explore batting averages, bowling economy, strike rates,
+    and AI-generated performance insights.
+</p>
+
+<!-- ── Search form ────────────────────────────────────────── -->
+<form method="GET" action="/players" class="search-form">
+    <div style="position:relative;flex:1;">
+        <i class="ri-search-line" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:15px;pointer-events:none;"></i>
+        <input
+            type="text"
+            name="search_name"
+            placeholder="Search player — e.g. Virat, Dhoni, Bumrah"
+            value="{{ search_name }}"
+            style="padding-left:36px;"
+        >
+    </div>
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-search-line"></i> Search
+    </button>
+</form>
+
+{% if search_name %}
+
+<!-- ── Search results header ──────────────────────────────── -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin:var(--space-5) 0 var(--space-3);">
+    <div>
+        <div class="section-label">Search results</div>
+        <h2 style="margin:0;">Results for "<span style="color:var(--accent);">{{ search_name }}</span>"</h2>
+    </div>
+</div>
+
+{% if player_kpis %}
+
+<!-- ── Batting KPIs ───────────────────────────────────────── -->
+<div class="section-label">Batting</div>
+<div class="cards" style="margin-top:var(--space-2);">
+    <div class="card">
+        <h3>Total Runs</h3>
+        <p style="color:var(--win);">{{ player_kpis.total_runs }}</p>
+        <div class="card-meta">Career total</div>
+    </div>
+    <div class="card">
+        <h3>Batting Matches</h3>
+        <p>{{ player_kpis.batting_matches }}</p>
+        <div class="card-meta">Innings played</div>
+    </div>
+    <div class="card">
+        <h3>Strike Rate</h3>
+        <p style="color:var(--accent);">{{ player_kpis.strike_rate }}</p>
+        <div class="card-meta">Runs per 100 balls</div>
+    </div>
+    <div class="card">
+        <h3>Boundaries</h3>
+        <p>{{ player_kpis.fours }} / {{ player_kpis.sixes }}</p>
+        <div class="card-meta">Fours &nbsp;/&nbsp; Sixes</div>
+    </div>
+</div>
+
+<!-- ── Bowling KPIs ───────────────────────────────────────── -->
+<div class="section-label" style="margin-top:var(--space-4);">Bowling</div>
+<div class="cards" style="margin-top:var(--space-2);">
+    <div class="card">
+        <h3>Wickets</h3>
+        <p style="color:var(--accent);">{{ player_kpis.wickets }}</p>
+        <div class="card-meta">Career total</div>
+    </div>
+    <div class="card">
+        <h3>Bowling Matches</h3>
+        <p>{{ player_kpis.bowling_matches }}</p>
+        <div class="card-meta">Matches bowled</div>
+    </div>
+    <div class="card">
+        <h3>Economy</h3>
+        <p style="color:{% if player_kpis.economy|float < 7.5 %}var(--win){% else %}var(--loss){% endif %};">
+            {{ player_kpis.economy }}
+        </p>
+        <div class="card-meta">Runs per over</div>
+    </div>
+    <div class="card">
+        <h3>Fours Conceded</h3>
+        <p>{{ player_kpis.fours_conceded }}</p>
+        <div class="card-meta">Batting fours hit</div>
+    </div>
+</div>
+
+{% endif %}
+
+{% if player_insight %}
+<!-- ── XAI insight ────────────────────────────────────────── -->
+<div class="xai-card" style="margin-top:var(--space-5);">
+    <h3><i class="ri-robot-2-line"></i> Explainable Player Insight</h3>
+    <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;margin-top:var(--space-2);">
+        {{ player_insight }}
+    </p>
+</div>
+{% endif %}
+
+<hr class="divider">
+
+<!-- ── Batting table ──────────────────────────────────────── -->
+{% if batting_result %}
+<div style="display:flex;align-items:center;justify-content:space-between;">
+    <div>
+        <div class="section-label">Batting</div>
+        <h2 style="margin-top:0;">Batting Summary</h2>
+    </div>
+    <span class="badge badge-amber"><i class="ri-sword-line"></i> &nbsp;Batting records</span>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Batter</th>
+                <th>Total Runs</th>
+                <th>Balls Faced</th>
+                <th>Matches</th>
+                <th>Strike Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in batting_result %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td>
+                    <div>
+                        <span style="font-weight:600;color:var(--text-primary);">
+                            {% if row.batter_full_name %}{{ row.batter_full_name }}{% else %}{{ row.batter }}{% endif %}
+                        </span>
+                        {% if row.batter_full_name %}
+                        <span style="display:block;font-size:11px;color:var(--text-muted);margin-top:1px;">{{ row.batter }}</span>
+                        {% endif %}
+                    </div>
+                </td>
+                <td style="color:var(--win);font-weight:600;">{{ row.total_runs }}</td>
+                <td>{{ row.balls_faced }}</td>
+                <td>{{ row.matches }}</td>
+                <td>
+                    <span style="
+                        font-weight:600;
+                        color:{% if row.strike_rate|float >= 150 %}var(--win){% elif row.strike_rate|float >= 120 %}var(--accent){% else %}var(--text-secondary){% endif %};
+                    ">{{ "%.2f"|format(row.strike_rate|float) }}</span>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% else %}
+<div class="info" style="margin-top:var(--space-4);">
+    <i class="ri-information-line"></i> &nbsp;No batting record found for "<strong>{{ search_name }}</strong>".
+</div>
+{% endif %}
+
+<hr class="divider">
+
+<!-- ── Bowling table ──────────────────────────────────────── -->
+{% if bowling_result %}
+<div style="display:flex;align-items:center;justify-content:space-between;">
+    <div>
+        <div class="section-label">Bowling</div>
+        <h2 style="margin-top:0;">Bowling Summary</h2>
+    </div>
+    <span class="badge badge-teal"><i class="ri-basketball-line"></i> &nbsp;Bowling records</span>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Bowler</th>
+                <th>Wickets</th>
+                <th>Balls Bowled</th>
+                <th>Runs Conceded</th>
+                <th>Overs</th>
+                <th>Economy</th>
+                <th>Matches</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in bowling_result %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td>
+                    <div>
+                        <span style="font-weight:600;color:var(--text-primary);">
+                            {% if row.bowler_full_name %}{{ row.bowler_full_name }}{% else %}{{ row.bowler }}{% endif %}
+                        </span>
+                        {% if row.bowler_full_name %}
+                        <span style="display:block;font-size:11px;color:var(--text-muted);margin-top:1px;">{{ row.bowler }}</span>
+                        {% endif %}
+                    </div>
+                </td>
+                <td style="color:var(--accent);font-weight:600;">{{ row.wickets }}</td>
+                <td>{{ row.balls_bowled }}</td>
+                <td>{{ row.runs_conceded }}</td>
+                <td>{{ "%.2f"|format(row.overs|float) }}</td>
+                <td>
+                    <span style="
+                        font-weight:600;
+                        color:{% if row.economy|float < 7 %}var(--win){% elif row.economy|float < 9 %}var(--accent){% else %}var(--loss){% endif %};
+                    ">{{ "%.2f"|format(row.economy|float) }}</span>
+                </td>
+                <td>{{ row.matches }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% else %}
+<div class="info">
+    <i class="ri-information-line"></i> &nbsp;No bowling record found for "<strong>{{ search_name }}</strong>".
+</div>
+{% endif %}
+
+{% endif %}{# end search_name #}
+
+<!-- ── Charts ─────────────────────────────────────────────── -->
+{% if chart1 or chart2 %}
+<hr class="divider">
+<div class="section-label">Visualizations</div>
+{% endif %}
+
+{% if chart1 %}
+<div class="chart-box">{{ chart1|safe }}</div>
+{% endif %}
+
+{% if chart2 %}
+<div class="chart-box">{{ chart2|safe }}</div>
+{% endif %}
+
+{% endblock %}

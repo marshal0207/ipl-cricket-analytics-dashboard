@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-shield-star-line"></i> IPL Franchise Analytics
+</div>
+<h1>Team Analytics</h1>
+<p class="intro">
+    Explore win rates, recent form, head-to-head tendencies, and performance breakdowns for every IPL franchise.
+</p>
+
+<!-- ── Filter form ────────────────────────────────────────── -->
+<form method="GET" action="/teams" class="search-form">
+    <select name="team">
+        <option value="All Teams" {% if selected_team == "All Teams" %}selected{% endif %}>All Teams</option>
+        {% for team in teams_list %}
+        <option value="{{ team }}" {% if selected_team == team %}selected{% endif %}>{{ team }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-filter-3-line"></i> Apply Filter
+    </button>
+</form>
+
+{% if selected_team_stats %}
+
+<!-- ── Selected team profile ──────────────────────────────── -->
+<div class="team-vs-section" style="margin-top:var(--space-5);">
+
+    <div class="team-box">
+        {% if selected_team_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' ~ selected_team_logo) }}" class="team-logo" alt="{{ selected_team }}">
+        {% else %}
+        <div style="width:72px;height:72px;display:grid;place-items:center;font-size:36px;background:var(--bg-input);border-radius:var(--radius-md);">🏏</div>
+        {% endif %}
+        <h3>{{ selected_team }}</h3>
+        <span class="badge badge-teal">Selected Team</span>
+    </div>
+
+    <!-- Win % ring -->
+    <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="probability-circle" style="width:110px;height:110px;">
+            <span style="font-size:22px;">{{ "%.1f"|format(selected_team_stats.win_percentage|float) }}%</span>
+            <p>Win Rate</p>
+        </div>
+    </div>
+
+    <!-- Recent form -->
+    <div class="team-box">
+        <h3 style="color:var(--text-muted);font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin:0 0 var(--space-3);">Recent Form</h3>
+        <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;justify-content:center;">
+            {% if team_insights and team_insights.recent_form %}
+                {% for result in team_insights.recent_form %}
+                <span style="
+                    width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+                    font-size:12px;font-weight:700;
+                    background:{% if result == 'W' %}var(--win-soft){% else %}var(--loss-soft){% endif %};
+                    color:{% if result == 'W' %}var(--win){% else %}var(--loss){% endif %};
+                    border:1px solid {% if result == 'W' %}var(--win-border){% else %}var(--loss-border){% endif %};
+                ">{{ result }}</span>
+                {% endfor %}
+            {% else %}
+                <span style="color:var(--text-muted);font-size:13px;">No recent data</span>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+
+<!-- ── Stat cards ─────────────────────────────────────────── -->
+<div class="cards">
+    <div class="card">
+        <h3>Matches</h3>
+        <p>{{ selected_team_stats.matches }}</p>
+        <div class="card-meta">Total played</div>
+    </div>
+    <div class="card">
+        <h3>Wins</h3>
+        <p style="color:var(--win);">{{ selected_team_stats.wins }}</p>
+        <div class="card-meta" style="color:var(--win);">↑ All seasons</div>
+    </div>
+    <div class="card">
+        <h3>Losses</h3>
+        <p style="color:var(--loss);">{{ selected_team_stats.losses }}</p>
+        <div class="card-meta" style="color:var(--loss);">All seasons</div>
+    </div>
+    <div class="card">
+        <h3>Win %</h3>
+        <p style="color:var(--accent);">{{ "%.1f"|format(selected_team_stats.win_percentage|float) }}%</p>
+        <div class="card-meta">Win rate</div>
+    </div>
+</div>
+
+{% if team_insights %}
+
+<!-- ── Team insights ──────────────────────────────────────── -->
+<div class="section-label" style="margin-top:var(--space-5);">Team Insights</div>
+<h2 style="margin-top:0;">Performance Breakdown</h2>
+
+<div class="insight-grid">
+
+    <div class="insight-card">
+        <h3 style="color:var(--win);display:flex;align-items:center;gap:6px;margin-top:0;">
+            <i class="ri-thumb-up-line"></i> Best Opponent
+        </h3>
+        <p style="font-size:20px;font-weight:700;color:var(--text-primary);margin-top:var(--space-2);">
+            {{ team_insights.best_opponent }}
+        </p>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:var(--space-1);">Highest win rate against</p>
+    </div>
+
+    <div class="insight-card">
+        <h3 style="color:var(--loss);display:flex;align-items:center;gap:6px;margin-top:0;">
+            <i class="ri-thumb-down-line"></i> Toughest Opponent
+        </h3>
+        <p style="font-size:20px;font-weight:700;color:var(--text-primary);margin-top:var(--space-2);">
+            {{ team_insights.worst_opponent }}
+        </p>
+        <p style="font-size:12px;color:var(--text-muted);margin-top:var(--space-1);">Lowest win rate against</p>
+    </div>
+
+    <div class="insight-card">
+        <h3 style="color:var(--accent);display:flex;align-items:center;gap:6px;margin-top:0;">
+            <i class="ri-bar-chart-line"></i> Recent Record
+        </h3>
+        <div style="display:flex;gap:var(--space-5);margin-top:var(--space-3);">
+            <div style="text-align:center;">
+                <p style="font-size:24px;font-weight:700;color:var(--win);">
+                    {{ team_insights.recent_form.count("W") if team_insights.recent_form else 0 }}
+                </p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;">Recent Wins</p>
+            </div>
+            <div style="text-align:center;">
+                <p style="font-size:24px;font-weight:700;color:var(--loss);">
+                    {{ team_insights.recent_form.count("L") if team_insights.recent_form else 0 }}
+                </p>
+                <p style="font-size:11px;color:var(--text-muted);margin-top:2px;">Recent Losses</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Win percentage bar -->
+<div style="margin:var(--space-4) 0;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:var(--space-2);">
+        <span style="font-size:12px;color:var(--text-muted);font-weight:500;">Win rate</span>
+        <span style="font-size:12px;color:var(--accent);font-weight:600;">{{ "%.1f"|format(selected_team_stats.win_percentage|float) }}%</span>
+    </div>
+    <div class="progress-bar">
+        <div class="progress-fill" style="width:{{ selected_team_stats.win_percentage|float }}%;"></div>
+    </div>
+</div>
+
+<div class="info">
+    <i class="ri-information-line"></i>
+    &nbsp;<strong>{{ selected_team }}</strong> has won
+    <strong>{{ selected_team_stats.wins }}</strong> out of
+    <strong>{{ selected_team_stats.matches }}</strong> matches
+    with a win rate of <strong>{{ "%.1f"|format(selected_team_stats.win_percentage|float) }}%</strong>.
+</div>
+
+{% endif %}
+{% endif %}
+
+<!-- ── Charts ─────────────────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Visualizations</div>
+
+<div class="chart-box">{{ chart1|safe }}</div>
+<div class="chart-box">{{ chart2|safe }}</div>
+
+<!-- ── All teams table ────────────────────────────────────── -->
+<hr class="divider">
+<div style="display:flex;align-items:center;justify-content:space-between;">
+    <div>
+        <div class="section-label">Leaderboard</div>
+        <h2 style="margin-top:0;">All Team Statistics</h2>
+    </div>
+    <span class="badge badge-teal"><i class="ri-trophy-line"></i> &nbsp;All seasons</span>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win %</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in teams %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:var(--space-3);">
+                        {% if row.logo %}
+                        <img src="{{ url_for('static', filename='images/teams/' ~ row.logo) }}" class="team-logo-small" alt="{{ row.team }}" style="width:28px;height:28px;margin:0;">
+                        {% endif %}
+                        <span style="font-weight:600;color:var(--text-primary);">{{ row.team }}</span>
+                    </div>
+                </td>
+                <td>{{ row.matches }}</td>
+                <td style="color:var(--win);font-weight:600;">{{ row.wins }}</td>
+                <td style="color:var(--loss);">{{ row.losses }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:var(--space-2);">
+                        <div class="progress-bar" style="width:80px;height:5px;">
+                            <div class="progress-fill" style="width:{{ row.win_percentage|float }}%;"></div>
+                        </div>
+                        <span style="font-size:12px;font-weight:600;color:var(--accent);">
+                            {{ "%.1f"|format(row.win_percentage|float) }}%
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<div class="hero-section">
+
+    <div class="hero-eyebrow">
+        <i class="ri-cpu-line"></i> Explainable AI · Random Forest · IPL 2008–2024
+    </div>
+
+    <img src="{{ url_for('static', filename='images/ipl.png') }}" class="ipl-main-logo" alt="IPL Logo">
+
+    <h1>Cricket Intelligence &amp;<br>Match Analytics Platform</h1>
+
+    <p class="intro">
+        AI-powered IPL analytics combining match prediction, explainable insights, team comparison,
+        and historical performance — built for transparency, not just results.
+    </p>
+
+    <!-- ── Stat cards ─────────────────────────────────────── -->
+    <div class="cards">
+        <div class="card">
+            <h3>Total Matches</h3>
+            <p>{{ stats.matches }}</p>
+            <div class="card-meta">↑ IPL 2008 – 2024</div>
+        </div>
+        <div class="card">
+            <h3>Total Teams</h3>
+            <p>{{ stats.teams }}</p>
+            <div class="card-meta">All franchises</div>
+        </div>
+        <div class="card">
+            <h3>Total Batters</h3>
+            <p>{{ stats.batters }}</p>
+            <div class="card-meta">Across all seasons</div>
+        </div>
+        <div class="card">
+            <h3>Total Bowlers</h3>
+            <p>{{ stats.bowlers }}</p>
+            <div class="card-meta">Across all seasons</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ── Feature nav cards ──────────────────────────────────── -->
+<div class="section-label">Explore the platform</div>
+
+<div class="feature-grid">
+    <a href="/predict" class="feature-card">
+        <div class="feature-icon"><i class="ri-robot-2-line"></i></div>
+        <h3>Match Prediction</h3>
+        <p>Select two teams and get an AI-generated winner prediction with win probability and confidence score.</p>
+    </a>
+    <a href="/teams" class="feature-card">
+        <div class="feature-icon"><i class="ri-shield-star-line"></i></div>
+        <h3>Team Analytics</h3>
+        <p>Explore win rates, head-to-head records, and historical performance trends for every IPL franchise.</p>
+    </a>
+    <a href="/players" class="feature-card">
+        <div class="feature-icon"><i class="ri-user-3-line"></i></div>
+        <h3>Player Analytics</h3>
+        <p>Batting averages, bowling economy rates, and performance breakdowns across seasons and venues.</p>
+    </a>
+    <a href="/seasons" class="feature-card">
+        <div class="feature-icon"><i class="ri-line-chart-line"></i></div>
+        <h3>Season Analytics</h3>
+        <p>Year-on-year performance charts, season winners, and statistical trends from 2008 to 2024.</p>
+    </a>
+    <a href="/venues" class="feature-card">
+        <div class="feature-icon"><i class="ri-building-2-line"></i></div>
+        <h3>Venue Analytics</h3>
+        <p>Ground-level insights — which venues favour batters, bowlers, or the team batting first.</p>
+    </a>
+    <a href="/toss" class="feature-card">
+        <div class="feature-icon"><i class="ri-swap-line"></i></div>
+        <h3>Toss Analysis</h3>
+        <p>How much does the toss matter? Win rates by toss decision, venue, and season breakdown.</p>
+    </a>
+</div>
+
+<!-- ── Top teams table ────────────────────────────────────── -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin-top:var(--space-6);">
+    <div>
+        <div class="section-label">Leaderboard</div>
+        <h2 style="margin:0;">Top Teams by Wins</h2>
+    </div>
+    <span class="badge badge-teal"><i class="ri-bar-chart-line"></i> &nbsp;All seasons</span>
+</div>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Matches</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Win %</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in top_teams %}
+            <tr>
+                <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                <td style="font-weight:600;color:var(--text-primary);">{{ team.team }}</td>
+                <td>{{ team.matches }}</td>
+                <td style="color:var(--win);font-weight:600;">{{ team.wins }}</td>
+                <td style="color:var(--loss);">{{ team.losses }}</td>
+                <td>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="progress-bar" style="width:90px;height:6px;">
+                            <div class="progress-fill" style="width:{{ team.win_percentage }}%;"></div>
+                        </div>
+                        <span style="font-size:12px;font-weight:600;color:var(--accent);">
+                            {{ "%.1f"|format(team.win_percentage) }}%
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

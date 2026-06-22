@@ -1,0 +1,320 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Page header ────────────────────────────────────────── -->
+<div class="hero-eyebrow">
+    <i class="ri-file-list-3-line"></i> Ball-by-Ball Match Data
+</div>
+<h1>Match Scorecard</h1>
+<p class="intro">
+    Select a season and match to view full innings breakdown, batting and bowling scorecards, and AI match analysis.
+</p>
+
+{% if scorecard_records %}
+<div style="display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-4);">
+    <a href="#innings" class="badge badge-teal" style="text-decoration:none;">Innings</a>
+    <a href="#batting" class="badge badge-amber" style="text-decoration:none;">Batting</a>
+    <a href="#bowling" class="badge badge-teal" style="text-decoration:none;">Bowling</a>
+    {% if analysis %}<a href="#analysis" class="badge badge-amber" style="text-decoration:none;">Analysis</a>{% endif %}
+</div>
+{% endif %}
+
+<!-- ── Filter form ────────────────────────────────────────── -->
+<form method="GET" action="/scorecard" class="search-form">
+    <div style="display:flex;align-items:center;gap:var(--space-2);flex:1;max-width:200px;">
+        <i class="ri-calendar-line" style="color:var(--text-muted);font-size:16px;flex-shrink:0;"></i>
+        <select name="season" onchange="this.form.submit()" style="flex:1;">
+            <option value="All Seasons">All Seasons</option>
+            {% for season in seasons_list %}
+            <option value="{{ season }}" {% if selected_season|string == season|string %}selected{% endif %}>{{ season }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <select name="match_id" required style="flex:2;">
+        <option value="">Select Match</option>
+        {% for match in match_options %}
+        <option value="{{ match.match_id }}" {% if selected_match|string == match.match_id|string %}selected{% endif %}>
+            {{ match.label }}
+        </option>
+        {% endfor %}
+    </select>
+
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-eye-line"></i> View Scorecard
+    </button>
+</form>
+
+{% if match_info %}
+
+<!-- ── Match header ───────────────────────────────────────── -->
+<div style="
+    background:var(--bg-card-alt);
+    border:1px solid var(--border);
+    border-radius:var(--radius-lg);
+    padding:var(--space-5);
+    margin:var(--space-5) 0;
+">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3);">
+        <div>
+            <div class="section-label">Match</div>
+            <h2 style="margin:0;font-size:20px;">
+                {{ match_info.batting_team }}
+                <span style="color:var(--text-muted);font-weight:400;font-size:16px;"> vs </span>
+                {{ match_info.bowling_team }}
+            </h2>
+            <div style="display:flex;gap:var(--space-4);margin-top:var(--space-3);flex-wrap:wrap;">
+                <span style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:4px;">
+                    <i class="ri-building-2-line"></i> {{ match_info.venue }}
+                </span>
+                <span style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:4px;">
+                    <i class="ri-map-pin-line"></i> {{ match_info.city }}
+                </span>
+                <span style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:4px;">
+                    <i class="ri-calendar-line"></i> {{ match_info.date }}
+                </span>
+            </div>
+        </div>
+        <span class="badge badge-amber" style="font-size:11px;align-self:flex-start;">
+            <i class="ri-trophy-line"></i> &nbsp;IPL {{ match_info.season }}
+        </span>
+    </div>
+</div>
+
+<!-- ── Match info cards ───────────────────────────────────── -->
+<div class="cards">
+    <div class="card">
+        <h3>Season</h3>
+        <p style="color:var(--accent);">{{ match_info.season }}</p>
+        <div class="card-meta">IPL Edition</div>
+    </div>
+    <div class="card">
+        <h3>Winner</h3>
+        <p style="color:var(--win);font-size:16px;font-weight:700;">{{ match_info.match_won_by }}</p>
+        <div class="card-meta" style="color:var(--win);">🏆 Match winner</div>
+    </div>
+    <div class="card">
+        <h3>Toss Winner</h3>
+        <p style="font-size:15px;">{{ match_info.toss_winner }}</p>
+        <div class="card-meta">Won the toss</div>
+    </div>
+    <div class="card">
+        <h3>Toss Decision</h3>
+        <p>
+            {% if match_info.toss_decision == "bat" or match_info.toss_decision == "Bat" %}
+            <span class="badge badge-amber">🏏 Bat First</span>
+            {% else %}
+            <span class="badge badge-teal">🏃 Field First</span>
+            {% endif %}
+        </p>
+        <div class="card-meta">Elected to</div>
+    </div>
+</div>
+
+{% endif %}
+
+{% if scorecard_records %}
+
+<!-- ── Innings summary ────────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Innings Summary</div>
+<h2 style="margin-top:0;">Innings Score</h2>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>Innings</th>
+                <th>Batting Team</th>
+                <th>Bowling Team</th>
+                <th>Total Runs</th>
+                <th>Wickets</th>
+                <th>Balls</th>
+                <th>Overs</th>
+                <th>Run Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in scorecard_records %}
+            <tr>
+                <td>
+                    <span class="badge badge-teal" style="font-size:10px;">Inn {{ row.innings }}</span>
+                </td>
+                <td style="font-weight:600;color:var(--text-primary);">{{ row.batting_team }}</td>
+                <td style="color:var(--text-secondary);">{{ row.bowling_team }}</td>
+                <td style="font-size:18px;font-weight:700;color:var(--win);">
+                    {{ row.total_runs }}
+                    <span style="font-size:13px;color:var(--loss);font-weight:500;">/{{ row.wickets }}</span>
+                </td>
+                <td style="color:var(--loss);">{{ row.wickets }}</td>
+                <td style="color:var(--text-muted);">{{ row.balls }}</td>
+                <td style="color:var(--text-secondary);">{{ "%.2f"|format(row.overs|float) }}</td>
+                <td>
+                    <span style="font-weight:600;color:{% if row.run_rate|float >= 9 %}var(--win){% elif row.run_rate|float >= 7 %}var(--accent){% else %}var(--loss){% endif %};">
+                        {{ "%.2f"|format(row.run_rate|float) }}
+                    </span>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endif %}
+
+{% if batting_scorecards %}
+
+<!-- ── Batting scorecard ──────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Batting</div>
+<h2 style="margin-top:0;">Batting Scorecard</h2>
+
+{% set innings_list = batting_scorecards | map(attribute='inning') | unique | list %}
+
+{% for inning in innings_list %}
+<div style="margin-bottom:var(--space-5);">
+    <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-3);">
+        <span class="badge badge-amber">Innings {{ inning }}</span>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Batter</th>
+                    <th>Runs</th>
+                    <th>Balls</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>Strike Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in batting_scorecards %}
+                {% if row.inning == inning %}
+                <tr>
+                    <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                    <td style="font-weight:600;color:var(--text-primary);">{{ row.batter }}</td>
+                    <td style="font-size:16px;font-weight:700;color:var(--win);">{{ row.runs }}</td>
+                    <td style="color:var(--text-secondary);">{{ row.balls }}</td>
+                    <td style="color:var(--accent);">{{ row.fours }}</td>
+                    <td style="color:var(--win);">{{ row.sixes }}</td>
+                    <td>
+                        <span style="font-weight:600;color:{% if row.strike_rate|float >= 150 %}var(--win){% elif row.strike_rate|float >= 120 %}var(--accent){% else %}var(--text-secondary){% endif %};">
+                            {{ "%.2f"|format(row.strike_rate|float) }}
+                        </span>
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endfor %}
+
+{% endif %}
+
+{% if bowling_scorecards %}
+
+<!-- ── Bowling scorecard ──────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Bowling</div>
+<h2 style="margin-top:0;">Bowling Scorecard</h2>
+
+{% set bowling_innings_list = bowling_scorecards | map(attribute='inning') | unique | list %}
+
+{% for inning in bowling_innings_list %}
+<div style="margin-bottom:var(--space-5);">
+    <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:var(--space-3);">
+        <span class="badge badge-teal">Innings {{ inning }}</span>
+    </div>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Bowler</th>
+                    <th>Balls</th>
+                    <th>Overs</th>
+                    <th>Runs Conceded</th>
+                    <th>Wickets</th>
+                    <th>Economy</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in bowling_scorecards %}
+                {% if row.inning == inning %}
+                <tr>
+                    <td style="color:var(--text-muted);font-weight:500;">{{ loop.index }}</td>
+                    <td style="font-weight:600;color:var(--text-primary);">{{ row.bowler }}</td>
+                    <td style="color:var(--text-secondary);">{{ row.balls_bowled }}</td>
+                    <td style="color:var(--text-muted);">{{ row.overs }}</td>
+                    <td style="color:var(--text-secondary);">{{ row.runs_conceded }}</td>
+                    <td style="font-weight:700;color:var(--accent);">{{ row.wickets }}</td>
+                    <td>
+                        <span style="font-weight:600;color:{% if row.economy|float < 7 %}var(--win){% elif row.economy|float < 9 %}var(--accent){% else %}var(--loss){% endif %};">
+                            {{ "%.2f"|format(row.economy|float) }}
+                        </span>
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endfor %}
+
+{% endif %}
+
+{% if analysis %}
+
+<!-- ── Match analysis ─────────────────────────────────────── -->
+<hr class="divider">
+<div class="section-label">Post-match Analysis</div>
+<h2 style="margin-top:0;">Scorecard Analysis</h2>
+
+<div class="cards">
+    <div class="card">
+        <h3>Winner</h3>
+        <p style="color:var(--win);font-size:15px;font-weight:700;">{{ analysis.winner }}</p>
+        <div class="card-meta" style="color:var(--win);">🏆 Match winner</div>
+    </div>
+    <div class="card">
+        <h3>Run Difference</h3>
+        <p style="color:var(--accent);">{{ analysis.run_difference }}</p>
+        <div class="card-meta">Runs margin</div>
+    </div>
+    <div class="card">
+        <h3>Run Rate Diff</h3>
+        <p style="color:var(--accent);">{{ analysis.run_rate_difference }}</p>
+        <div class="card-meta">RR gap</div>
+    </div>
+    <div class="card">
+        <h3>Wicket Diff</h3>
+        <p style="color:var(--loss);">{{ analysis.wicket_difference }}</p>
+        <div class="card-meta">Wickets margin</div>
+    </div>
+</div>
+
+<!-- XAI match insight -->
+<div class="xai-card" style="margin-top:var(--space-4);">
+    <h3><i class="ri-robot-2-line"></i> Explainable Match Insight</h3>
+    <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;margin-top:var(--space-2);">
+        {{ analysis.reason }}
+    </p>
+</div>
+
+{% endif %}
+
+{% if selected_match and not scorecard_records %}
+<div class="info" style="margin-top:var(--space-4);">
+    <i class="ri-information-line"></i> &nbsp;No scorecard data found for this match.
+</div>
+{% endif %}
+
+{% endblock %}

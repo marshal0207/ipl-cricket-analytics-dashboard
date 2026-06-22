@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<div class="prediction-hero">
+    <div class="hero-eyebrow">
+        <i class="ri-robot-2-line"></i> Random Forest · Explainable AI
+    </div>
+    <h1>Match Winner Prediction</h1>
+    <p class="intro">
+        Select two IPL teams and get an AI-generated winner prediction backed by historical match patterns,
+        head-to-head records, and explainable cricket insights.
+    </p>
+</div>
+
+<!-- ── Prediction form ────────────────────────────────────── -->
+<form method="POST" action="/predict" class="prediction-form">
+
+    <div class="team-select-box">
+        <label>Team 1</label>
+        <select name="team1" required>
+            <option value="">Select Team 1</option>
+            {% for team in teams %}
+            <option value="{{ team }}" {% if selected_team1 == team %}selected{% endif %}>{{ team }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="vs-badge">VS</div>
+
+    <div class="team-select-box">
+        <label>Team 2</label>
+        <select name="team2" required>
+            <option value="">Select Team 2</option>
+            {% for team in teams %}
+            <option value="{{ team }}" {% if selected_team2 == team %}selected{% endif %}>{{ team }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        <i class="ri-flashlight-line"></i> Predict Winner
+    </button>
+
+</form>
+
+{% if prediction %}
+
+<!-- ── Team VS section ────────────────────────────────────── -->
+<div class="team-vs-section">
+    <div class="team-box {% if prediction == selected_team1 %}winner-glow{% endif %}">
+        {% if team1_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' + team1_logo) }}" class="team-logo" alt="{{ selected_team1 }}">
+        {% else %}
+        <div style="width:72px;height:72px;display:grid;place-items:center;font-size:32px;background:var(--bg-input);border-radius:var(--radius-md);">🏏</div>
+        {% endif %}
+        <h3>{{ selected_team1 }}</h3>
+        <span class="badge {% if prediction == selected_team1 %}badge-amber{% else %}badge-teal{% endif %}">
+            {{ team1_probability }}% win chance
+        </span>
+    </div>
+
+    <div class="vs-circle">VS</div>
+
+    <div class="team-box {% if prediction == selected_team2 %}winner-glow{% endif %}">
+        {% if team2_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' + team2_logo) }}" class="team-logo" alt="{{ selected_team2 }}">
+        {% else %}
+        <div style="width:72px;height:72px;display:grid;place-items:center;font-size:32px;background:var(--bg-input);border-radius:var(--radius-md);">🏏</div>
+        {% endif %}
+        <h3>{{ selected_team2 }}</h3>
+        <span class="badge {% if prediction == selected_team2 %}badge-amber{% else %}badge-teal{% endif %}">
+            {{ team2_probability }}% win chance
+        </span>
+    </div>
+</div>
+
+<!-- ── Prediction result card ─────────────────────────────── -->
+<div class="prediction-result-card">
+    <div class="winner-section">
+        {% if winner_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' + winner_logo) }}" class="winner-logo" alt="{{ prediction }}">
+        {% endif %}
+        <div>
+            <span class="badge badge-amber"><i class="ri-trophy-line"></i> &nbsp;Predicted Winner</span>
+            <h2 style="margin:var(--space-2) 0 var(--space-1);color:var(--win);">{{ prediction }}</h2>
+            <p style="font-size:13px;color:var(--text-secondary);">{{ prediction_reason }}</p>
+        </div>
+    </div>
+
+    <div class="probability-circle">
+        <span>{{ probability }}%</span>
+        <p>Confidence</p>
+    </div>
+</div>
+
+<!-- Win probability bar -->
+<div class="section-label" style="margin-top:var(--space-5);">Winning probability</div>
+<div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-5);">
+    <span style="font-size:12px;color:var(--text-muted);min-width:110px;font-weight:500;">{{ selected_team1 }}</span>
+    <div class="progress-bar" style="flex:1;">
+        <div class="progress-fill" style="width:{{ team1_probability }}%;"></div>
+    </div>
+    <span style="font-size:12px;color:var(--text-muted);min-width:110px;text-align:right;font-weight:500;">{{ selected_team2 }}</span>
+</div>
+
+<hr class="divider">
+
+{% if comparison %}
+<!-- ── Head-to-head comparison ────────────────────────────── -->
+<div class="section-label">Head-to-head</div>
+<h2 style="margin-top:0;">Team Comparison</h2>
+
+<div class="comparison-grid">
+
+    <div class="comparison-card">
+        {% if team1_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' + team1_logo) }}" class="team-logo-small" alt="{{ comparison.team1 }}">
+        {% endif %}
+        <h3 style="margin-top:0;">{{ comparison.team1 }}</h3>
+        <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-top:var(--space-3);">
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">H2H Wins</span>
+                <span style="font-weight:600;color:var(--win);">{{ comparison.team1_h2h_wins }}</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">Overall Win %</span>
+                <span style="font-weight:600;color:var(--accent);">{{ comparison.team1_win_pct }}%</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">Recent Form</span>
+                <span style="font-weight:600;letter-spacing:2px;">{{ team1_recent_form|join(" ") }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:var(--space-2);">
+        <div class="comparison-center-card">
+            <strong>{{ comparison.total_h2h }}</strong>
+            <span>H2H</span>
+        </div>
+        <span style="font-size:11px;color:var(--text-muted);font-weight:500;">Total Matches</span>
+    </div>
+
+    <div class="comparison-card">
+        {% if team2_logo %}
+        <img src="{{ url_for('static', filename='images/teams/' + team2_logo) }}" class="team-logo-small" alt="{{ comparison.team2 }}">
+        {% endif %}
+        <h3 style="margin-top:0;">{{ comparison.team2 }}</h3>
+        <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-top:var(--space-3);">
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">H2H Wins</span>
+                <span style="font-weight:600;color:var(--win);">{{ comparison.team2_h2h_wins }}</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">Overall Win %</span>
+                <span style="font-weight:600;color:var(--accent);">{{ comparison.team2_win_pct }}%</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:13px;">
+                <span style="color:var(--text-muted);">Recent Form</span>
+                <span style="font-weight:600;letter-spacing:2px;">{{ team2_recent_form|join(" ") }}</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endif %}
+
+<hr class="divider">
+
+{% if advanced_xai %}
+<!-- ── XAI reasons table ───────────────────────────────────── -->
+<div class="section-label">Explainability</div>
+<h2 style="margin-top:0;">Why {{ prediction }} Was Predicted</h2>
+
+<div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th><i class="ri-flashlight-line"></i> &nbsp;Advantage Factor</th>
+                <th>Reasoning</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in advanced_xai %}
+            <tr>
+                <td>
+                    <span class="badge badge-teal">{{ item.impact }}</span>
+                </td>
+                <td style="color:var(--text-secondary);font-size:13px;">{{ item.reason }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if xai_factors %}
+<hr class="divider">
+
+<!-- ── Feature importance bars ───────────────────────────── -->
+<div class="section-label">Model internals</div>
+<h2 style="margin-top:0;">Model Feature Importance</h2>
+
+<div class="xai-card">
+    <h3><i class="ri-bar-chart-horizontal-line"></i> Feature weights used in this prediction</h3>
+
+    {% for factor, value in xai_factors.items() %}
+    <div class="feature-importance-bar">
+        <span class="fi-label">
+            {% if factor == "team1_encoded" %}Team 1 Identity
+            {% elif factor == "team2_encoded" %}Team 2 Identity
+            {% elif factor == "team1_win_pct" %}Team 1 Win %
+            {% elif factor == "team2_win_pct" %}Team 2 Win %
+            {% elif factor == "team1_h2h" %}Team 1 H2H Record
+            {% elif factor == "team2_h2h" %}Team 2 H2H Record
+            {% elif factor == "team1_form" %}Team 1 Recent Form
+            {% elif factor == "team2_form" %}Team 2 Recent Form
+            {% elif factor == "win_pct_diff" %}Win % Difference
+            {% elif factor == "h2h_diff" %}H2H Difference
+            {% elif factor == "form_diff" %}Form Difference
+            {% elif factor == "venue_encoded" %}Venue Influence
+            {% elif factor == "season" %}Season Influence
+            {% elif factor == "toss_winner_encoded" %}Toss Winner Effect
+            {% elif factor == "toss_decision_encoded" %}Toss Decision Effect
+            {% elif factor == "toss_winner_is_team1" %}Team 1 Won Toss
+            {% elif factor == "toss_winner_is_team2" %}Team 2 Won Toss
+            {% else %}{{ factor.replace("_", " ").title() }}
+            {% endif %}
+        </span>
+        <div class="fi-track">
+            <div class="fi-fill" style="width:{{ value }}%;"></div>
+        </div>
+        <span class="fi-value">{{ value }}%</span>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<hr class="divider">
+
+<!-- ── Insight cards ──────────────────────────────────────── -->
+<div class="section-label">AI Insights</div>
+<h2 style="margin-top:0;">Explainable AI Insight</h2>
+
+<div class="insight-grid">
+    <div class="insight-card">
+        <h3 style="color:var(--accent);display:flex;align-items:center;gap:6px;">
+            <i class="ri-robot-2-line"></i> Model Prediction
+        </h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.65;margin-top:var(--space-2);">{{ explanation }}</p>
+    </div>
+
+    <div class="insight-card">
+        <h3 style="color:var(--accent);display:flex;align-items:center;gap:6px;">
+            <i class="ri-cricket-line" style="display:none;"></i>
+            🏏 Cricket Explanation
+        </h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.65;margin-top:var(--space-2);">{{ insight }}</p>
+    </div>
+
+    <div class="insight-card">
+        <h3 style="color:var(--accent);display:flex;align-items:center;gap:6px;">
+            <i class="ri-file-chart-line"></i> Prediction Summary
+        </h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.65;margin-top:var(--space-2);">
+            <strong style="color:var(--text-primary);">{{ prediction }}</strong> was predicted based on model probability,
+            overall win percentage, team identity, season influence, and match context.
+        </p>
+    </div>
+</div>
+
+{% endif %}
+
+{% if explanation and not prediction %}
+<div class="info"><i class="ri-information-line"></i> &nbsp;{{ explanation }}</div>
+{% endif %}
+
+<hr class="divider">
+
+<!-- ── Model info ─────────────────────────────────────────── -->
+<div class="section-label">About the model</div>
+<h2 style="margin-top:0;">Model Information</h2>
+
+<div class="model-info-grid">
+    <div class="model-info-card">
+        <div style="font-size:22px;margin-bottom:var(--space-3);">🌲</div>
+        <h3 style="color:var(--accent);margin:0 0 var(--space-2);">Algorithm</h3>
+        <p style="font-size:13px;color:var(--text-secondary);">Random Forest Classifier</p>
+    </div>
+    <div class="model-info-card">
+        <div style="font-size:22px;margin-bottom:var(--space-3);"><i class="ri-input-method-line"></i></div>
+        <h3 style="color:var(--accent);margin:0 0 var(--space-2);">Inputs</h3>
+        <p style="font-size:13px;color:var(--text-secondary);">Teams, H2H, Win %, Recent Form, Venue, Season &amp; Toss</p>
+    </div>
+    <div class="model-info-card">
+        <div style="font-size:22px;margin-bottom:var(--space-3);"><i class="ri-trophy-line"></i></div>
+        <h3 style="color:var(--accent);margin:0 0 var(--space-2);">Output</h3>
+        <p style="font-size:13px;color:var(--text-secondary);">Predicted winner and winning probability</p>
+    </div>
+    <div class="model-info-card">
+        <div style="font-size:22px;margin-bottom:var(--space-3);"><i class="ri-eye-line"></i></div>
+        <h3 style="color:var(--accent);margin:0 0 var(--space-2);">Explainability</h3>
+        <p style="font-size:13px;color:var(--text-secondary);">XAI with cricket-based reasoning per prediction</p>
+    </div>
+</div>
+
+<div class="info">
+    <i class="ri-information-line"></i>
+    &nbsp;Prediction is based on historical IPL data. Accuracy can be improved by adding player form, squad strength, and playing XI data.
+</div>
+
+{% endblock %}
