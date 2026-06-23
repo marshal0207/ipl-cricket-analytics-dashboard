@@ -5,9 +5,6 @@
 # zip files
 *.zip
 
-# large model
-models/winner_model.pkl
-
 # cache
 __pycache__/
 *.pyc
